@@ -1,0 +1,80 @@
+#clearBtn{
+  padding-top: 0;
+}
+
+@media (max-width: 575px) {
+  #todolistfrom {
+    border: 1px black solid;
+    border-radius: 20px;
+    width: 400px;
+    height: 500px;
+    background-color: #eae403;
+    margin: 0 auto;
+  }
+
+  .completed {
+    text-decoration: line-through
+  }
+}
+@media (min-width: 576px) {
+  #todolistfrom {
+    border: 1px black solid;
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+    background-color: #eae403;
+    margin: 0 auto;
+  }
+
+  .completed {
+    text-decoration: line-through
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #todolistfrom {
+    border: 1px black solid;
+    border-radius: 20px;
+    width: 600px;
+    height: 500px;
+    background-color: #eae403;
+    margin: 0 auto;
+  }
+
+  .completed {
+    text-decoration: line-through
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #todolistfrom {
+    border: 1px black solid;
+    border-radius: 20px;
+    width: 600px;
+    height: 500px;
+    background-color: #eae403;
+    margin: 0 auto;
+  }
+
+  .completed {
+    text-decoration: line-through
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #todolistfrom {
+    border: 1px black solid;
+    border-radius: 20px;
+    width: 600px;
+    height: 500px;
+    background-color: #eae403;
+    margin: 0 auto;
+  }
+
+  .completed {
+    text-decoration: line-through
+  }
+}
