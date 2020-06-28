@@ -90,8 +90,6 @@ function render() {
 // 畫面2，全部移除移除用
 function renderClear() {
   todoArr = [];
-  doneArr = [];
   todoList.innerHTML = '';
-  todoDoneList.innerHTML = '';
   taskNum.innerHTML = `待辦事項數量：${todoArr.length}`
 }
