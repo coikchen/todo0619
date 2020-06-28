@@ -1,10 +1,10 @@
 let todoArr = [];
-let doneArr = [];
 let addBtn = document.querySelector('#addBtn');
 let newTodo = document.querySelector('#newTodo');
 let todoList = document.querySelector('#todoList');
 let taskNum = document.querySelector('#taskNum');
 let clearBtn = document.querySelector('#clearBtn');
+
 // 新增
 addBtn.addEventListener('click', addTodo);
 function addTodo() {
@@ -34,6 +34,7 @@ function removeTodo(e) {
     todoArr.forEach(function (item, key) {
       if (e.target.dataset.id == item.id) {
         removeIndex = key;
+        console.log(key)
       }
     });
     todoArr.splice(removeIndex, 1)
@@ -41,7 +42,8 @@ function removeTodo(e) {
   }
 }
 
-// 完成
+
+// 推到DONE
 todoList.addEventListener('click', doneTodo);
 function doneTodo(e) {
   if (e.target.dataset.action = 'complete') {
@@ -56,6 +58,15 @@ function doneTodo(e) {
     render();
   }
 }
+
+
+
+
+
+
+
+
+
 
 // 畫面1，全部移除以外用的
 function render() {
@@ -79,7 +90,8 @@ function render() {
 // 畫面2，全部移除移除用
 function renderClear() {
   todoArr = [];
+  doneArr = [];
   todoList.innerHTML = '';
+  todoDoneList.innerHTML = '';
   taskNum.innerHTML = `待辦事項數量：${todoArr.length}`
 }
-

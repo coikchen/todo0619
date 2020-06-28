@@ -1,14 +1,30 @@
-#clearBtn{
+h2 {
+  color: white;
+}
+
+#clearBtn {
   padding-top: 0;
+}
+
+#todolistfrom {
+  background: linear-gradient(306deg, #014872 7%, #D7EDE1 75%);
+  background: -moz-linear-gradient(306deg, #014872 7%, #D7EDE1 75%);
+  background: -webkit-linear-gradient(306deg, #014872 7%, #D7EDE1 75%);
+  background: -o-linear-gradient(306deg, #014872 7%, #D7EDE1 75%);
+  box-shadow: 2px 2px 2px 2px #cccccc;
+  position: relative;
+  top: 50%;
+  margin: 0 auto;
+  transform: translate(5%, 20%);
+  border: 1px solid rgba(1, 72, 114, 0.5);
+  border-radius: 20px;
 }
 
 @media (max-width: 575px) {
   #todolistfrom {
-    border: 1px black solid;
-    border-radius: 20px;
     width: 400px;
     height: 500px;
-    background-color: #eae403;
+    /* background-color: #eae403; */
     margin: 0 auto;
   }
 
@@ -16,16 +32,12 @@
     text-decoration: line-through
   }
 }
+
 @media (min-width: 576px) {
   #todolistfrom {
-    border: 1px black solid;
-    border-radius: 20px;
     width: 500px;
     height: 500px;
-    background-color: #eae403;
-    margin: 0 auto;
   }
-
   .completed {
     text-decoration: line-through
   }
@@ -34,14 +46,9 @@
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   #todolistfrom {
-    border: 1px black solid;
-    border-radius: 20px;
     width: 600px;
     height: 500px;
-    background-color: #eae403;
-    margin: 0 auto;
   }
-
   .completed {
     text-decoration: line-through
   }
@@ -50,14 +57,9 @@
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #todolistfrom {
-    border: 1px black solid;
-    border-radius: 20px;
     width: 600px;
     height: 500px;
-    background-color: #eae403;
-    margin: 0 auto;
   }
-
   .completed {
     text-decoration: line-through
   }
@@ -66,14 +68,10 @@
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   #todolistfrom {
-    border: 1px black solid;
-    border-radius: 20px;
     width: 600px;
     height: 500px;
-    background-color: #eae403;
     margin: 0 auto;
   }
-
   .completed {
     text-decoration: line-through
   }
